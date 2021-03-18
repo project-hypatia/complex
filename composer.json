@@ -1,0 +1,39 @@
+{
+    "name": "hypatia/complex",
+    "type": "library",
+    "license": "MIT",
+    "description": "Complex numbers implementation of Hypatia project.",
+    "keywords": [
+        "math",
+        "number",
+        "complex",
+        "polar",
+        "cartesian",
+        "functional programming"
+    ],
+    "authors": [
+        {"name": "Michel Petit", "email": "contact@cogito-ergo-dev.fr"}
+    ],
+    "require-dev": {
+        "pestphp/pest": "^1.0"
+    },
+    "require": {
+        "php": ">=7.4.0",
+        "grrr-amsterdam/garp-functional": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypatia\\Number\\": "src/"
+        },
+        "files": [
+            "src/Complex/Functions.php",
+            "src/Complex/Cartesian/Unary/Functions.php",
+            "src/Complex/Cartesian/Binary/Functions.php",
+            "src/Complex/Cartesian/Converter/Functions.php",
+            "src/Complex/Cartesian/Formater/Functions.php",
+            "src/Complex/Polar/Unary/Functions.php",
+            "src/Complex/Polar/Converter/Functions.php",
+            "src/Complex/Polar/Formater/Functions.php"
+        ]
+    }
+}
