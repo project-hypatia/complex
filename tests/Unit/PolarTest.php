@@ -13,3 +13,7 @@ test('Complexe number as Polar form should have rho and phi attributes', functio
         expect($r)->toHaveProperty('phi', pi()/3);
     })(new Polar(2, pi()/3));
 });
+
+test('Pool toString call should success', function($rho, $phi, $str){
+    expect((string)(new Polar($rho, $phi)))->toBe($str);
+})->with('polars');
