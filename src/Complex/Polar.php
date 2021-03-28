@@ -2,6 +2,7 @@
 
 namespace Hypatia\Number\Complex;
 
+use function Hypatia\Number\Complex\Polar\Formater\format;
 
 class Polar extends Complex 
 {
@@ -17,5 +18,10 @@ class Polar extends Complex
     {
         $this->rho = $rho;
         $this->phi = $phi;
+    }
+
+    public function __toString(): string
+    {
+        return format($this->rho, $this->phi);
     }
 }
