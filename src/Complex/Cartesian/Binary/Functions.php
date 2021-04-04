@@ -15,7 +15,7 @@ function compute_conjugate(float $r, float $i = null)
 function compute_modulus(float $r, float $i = null)
 {
     return f\autocurry(
-        fn($r, $i) => \sqrt($r*$r + $i*$i),
+        'hypot',
         2
     )(...\func_get_args());
 }
